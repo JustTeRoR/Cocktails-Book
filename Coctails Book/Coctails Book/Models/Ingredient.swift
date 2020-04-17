@@ -19,5 +19,20 @@ class Ingredient
         IngredientMeasure_ = ingredientMeasure
     }
     
+    public func ToString()->String
+    {
+        if (IngredientMeasure_ != nil && IngredientName_ != nil)
+        {
+            return "\(IngredientMeasure_!) \(IngredientName_!)"
+        }
+        else if (IngredientName_ != nil)
+        {
+            return "\(IngredientName_!)"
+        }
+        else
+        {
+            return ""
+        }
+    }
     
 }
