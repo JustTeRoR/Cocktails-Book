@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:&#x421;ocktails Book.xcodeproj">
+      location = "self:Coctails Book.xcodeproj">
    </FileRef>
 </Workspace>

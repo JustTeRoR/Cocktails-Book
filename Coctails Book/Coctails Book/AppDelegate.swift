@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Сocktails Book
+//  Coctails Book
 //
-//  Created by Сергей Павленок on 4/14/20.
+//  Created by Сергей Павленок on 4/17/20.
 //  Copyright © 2020 just_terror. All rights reserved.
 //
 
