@@ -14,6 +14,10 @@
 		808DAC00244A439D00771ECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808DABFE244A439D00771ECD /* LaunchScreen.storyboard */; };
 		808DAC0A244A49C400771ECD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DAC08244A49C400771ECD /* MainViewController.swift */; };
 		808DAC0B244A49C400771ECD /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808DAC09244A49C400771ECD /* MainViewController.xib */; };
+		808DAC0E244A54FC00771ECD /* CocktailDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DAC0C244A54FC00771ECD /* CocktailDetailsViewController.swift */; };
+		808DAC0F244A54FC00771ECD /* CocktailDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808DAC0D244A54FC00771ECD /* CocktailDetailsViewController.xib */; };
+		808DAC13244A616900771ECD /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DAC12244A616900771ECD /* Cocktail.swift */; };
+		808DAC15244A66EF00771ECD /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DAC14244A66EF00771ECD /* Ingredient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		808DAC01244A439D00771ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		808DAC08244A49C400771ECD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		808DAC09244A49C400771ECD /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		808DAC0C244A54FC00771ECD /* CocktailDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailsViewController.swift; sourceTree = "<group>"; };
+		808DAC0D244A54FC00771ECD /* CocktailDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocktailDetailsViewController.xib; sourceTree = "<group>"; };
+		808DAC12244A616900771ECD /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
+		808DAC14244A66EF00771ECD /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 		808DABF2244A439C00771ECD /* Coctails Book */ = {
 			isa = PBXGroup;
 			children = (
+				808DAC11244A5FBF00771ECD /* Models */,
+				808DAC10244A5FB200771ECD /* Views */,
 				808DAC07244A499000771ECD /* Controllers */,
 				808DABF3244A439C00771ECD /* AppDelegate.swift */,
 				808DABF7244A439C00771ECD /* ViewController.swift */,
@@ -74,8 +84,26 @@
 			children = (
 				808DAC08244A49C400771ECD /* MainViewController.swift */,
 				808DAC09244A49C400771ECD /* MainViewController.xib */,
+				808DAC0C244A54FC00771ECD /* CocktailDetailsViewController.swift */,
+				808DAC0D244A54FC00771ECD /* CocktailDetailsViewController.xib */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		808DAC10244A5FB200771ECD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		808DAC11244A5FBF00771ECD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				808DAC12244A616900771ECD /* Cocktail.swift */,
+				808DAC14244A66EF00771ECD /* Ingredient.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,7 +134,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
-				ORGANIZATIONNAME = just_terror;
+				ORGANIZATIONNAME = justterror;
 				TargetAttributes = {
 					808DABEF244A439C00771ECD = {
 						CreatedOnToolsVersion = 11.4;
@@ -137,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				808DAC00244A439D00771ECD /* LaunchScreen.storyboard in Resources */,
+				808DAC0F244A54FC00771ECD /* CocktailDetailsViewController.xib in Resources */,
 				808DABFD244A439D00771ECD /* Assets.xcassets in Resources */,
 				808DABFB244A439C00771ECD /* Main.storyboard in Resources */,
 				808DAC0B244A49C400771ECD /* MainViewController.xib in Resources */,
@@ -151,7 +180,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				808DAC0A244A49C400771ECD /* MainViewController.swift in Sources */,
+				808DAC0E244A54FC00771ECD /* CocktailDetailsViewController.swift in Sources */,
+				808DAC15244A66EF00771ECD /* Ingredient.swift in Sources */,
 				808DABF8244A439C00771ECD /* ViewController.swift in Sources */,
+				808DAC13244A616900771ECD /* Cocktail.swift in Sources */,
 				808DABF4244A439C00771ECD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,13 +329,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RHMKD77C8;
 				INFOPLIST_FILE = "Coctails Book/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.just-terror.Coctails-Book";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justterror.Coctails-Book";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,13 +348,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RHMKD77C8;
 				INFOPLIST_FILE = "Coctails Book/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.just-terror.Coctails-Book";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justterror.Coctails-Book";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

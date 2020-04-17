@@ -18,7 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         let rootViewController = MainViewController()
-        window?.rootViewController = rootViewController
+        let cocktailDetailsCOntroller = CocktailDetailsViewController()
+        let navigationController = UINavigationController(rootViewController: rootViewController)
+        
+        let tabBarController = UITabBarController()
+        tabBarController.setViewControllers([navigationController, cocktailDetailsCOntroller], animated: true)
+        window?.rootViewController = tabBarController
         
         return true
     }
