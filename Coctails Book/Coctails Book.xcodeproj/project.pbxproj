@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		808DABD4244A41DC00771ECD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DABD3244A41DC00771ECD /* AppDelegate.swift */; };
-		808DABD6244A41DC00771ECD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DABD5244A41DC00771ECD /* SceneDelegate.swift */; };
-		808DABD8244A41DC00771ECD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DABD7244A41DC00771ECD /* ViewController.swift */; };
-		808DABDB244A41DC00771ECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808DABD9244A41DC00771ECD /* Main.storyboard */; };
-		808DABDD244A41DD00771ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808DABDC244A41DD00771ECD /* Assets.xcassets */; };
-		808DABE0244A41DD00771ECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808DABDE244A41DD00771ECD /* LaunchScreen.storyboard */; };
+		808DABF4244A439C00771ECD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DABF3244A439C00771ECD /* AppDelegate.swift */; };
+		808DABF8244A439C00771ECD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DABF7244A439C00771ECD /* ViewController.swift */; };
+		808DABFB244A439C00771ECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808DABF9244A439C00771ECD /* Main.storyboard */; };
+		808DABFD244A439D00771ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808DABFC244A439D00771ECD /* Assets.xcassets */; };
+		808DAC00244A439D00771ECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808DABFE244A439D00771ECD /* LaunchScreen.storyboard */; };
+		808DAC0A244A49C400771ECD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DAC08244A49C400771ECD /* MainViewController.swift */; };
+		808DAC0B244A49C400771ECD /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808DAC09244A49C400771ECD /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		808DABD0244A41DC00771ECD /* Coctails Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coctails Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		808DABD3244A41DC00771ECD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		808DABD5244A41DC00771ECD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		808DABD7244A41DC00771ECD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		808DABDA244A41DC00771ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		808DABDC244A41DD00771ECD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		808DABDF244A41DD00771ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		808DABE1244A41DD00771ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		808DABF0244A439C00771ECD /* Coctails Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coctails Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		808DABF3244A439C00771ECD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		808DABF7244A439C00771ECD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		808DABFA244A439C00771ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		808DABFC244A439D00771ECD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		808DABFF244A439D00771ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		808DAC01244A439D00771ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		808DAC08244A49C400771ECD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		808DAC09244A49C400771ECD /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		808DABCD244A41DC00771ECD /* Frameworks */ = {
+		808DABED244A439C00771ECD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,46 +39,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		808DABC7244A41DC00771ECD = {
+		808DABE7244A439C00771ECD = {
 			isa = PBXGroup;
 			children = (
-				808DABD2244A41DC00771ECD /* Coctails Book */,
-				808DABD1244A41DC00771ECD /* Products */,
+				808DABF2244A439C00771ECD /* Coctails Book */,
+				808DABF1244A439C00771ECD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		808DABD1244A41DC00771ECD /* Products */ = {
+		808DABF1244A439C00771ECD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				808DABD0244A41DC00771ECD /* Coctails Book.app */,
+				808DABF0244A439C00771ECD /* Coctails Book.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		808DABD2244A41DC00771ECD /* Coctails Book */ = {
+		808DABF2244A439C00771ECD /* Coctails Book */ = {
 			isa = PBXGroup;
 			children = (
-				808DABD3244A41DC00771ECD /* AppDelegate.swift */,
-				808DABD5244A41DC00771ECD /* SceneDelegate.swift */,
-				808DABD7244A41DC00771ECD /* ViewController.swift */,
-				808DABD9244A41DC00771ECD /* Main.storyboard */,
-				808DABDC244A41DD00771ECD /* Assets.xcassets */,
-				808DABDE244A41DD00771ECD /* LaunchScreen.storyboard */,
-				808DABE1244A41DD00771ECD /* Info.plist */,
+				808DAC07244A499000771ECD /* Controllers */,
+				808DABF3244A439C00771ECD /* AppDelegate.swift */,
+				808DABF7244A439C00771ECD /* ViewController.swift */,
+				808DABF9244A439C00771ECD /* Main.storyboard */,
+				808DABFC244A439D00771ECD /* Assets.xcassets */,
+				808DABFE244A439D00771ECD /* LaunchScreen.storyboard */,
+				808DAC01244A439D00771ECD /* Info.plist */,
 			);
 			path = "Coctails Book";
+			sourceTree = "<group>";
+		};
+		808DAC07244A499000771ECD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				808DAC08244A49C400771ECD /* MainViewController.swift */,
+				808DAC09244A49C400771ECD /* MainViewController.xib */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		808DABCF244A41DC00771ECD /* Coctails Book */ = {
+		808DABEF244A439C00771ECD /* Coctails Book */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 808DABE4244A41DD00771ECD /* Build configuration list for PBXNativeTarget "Coctails Book" */;
+			buildConfigurationList = 808DAC04244A439D00771ECD /* Build configuration list for PBXNativeTarget "Coctails Book" */;
 			buildPhases = (
-				808DABCC244A41DC00771ECD /* Sources */,
-				808DABCD244A41DC00771ECD /* Frameworks */,
-				808DABCE244A41DC00771ECD /* Resources */,
+				808DABEC244A439C00771ECD /* Sources */,
+				808DABED244A439C00771ECD /* Frameworks */,
+				808DABEE244A439C00771ECD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +95,25 @@
 			);
 			name = "Coctails Book";
 			productName = "Coctails Book";
-			productReference = 808DABD0244A41DC00771ECD /* Coctails Book.app */;
+			productReference = 808DABF0244A439C00771ECD /* Coctails Book.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		808DABC8244A41DC00771ECD /* Project object */ = {
+		808DABE8244A439C00771ECD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = just_terror;
 				TargetAttributes = {
-					808DABCF244A41DC00771ECD = {
+					808DABEF244A439C00771ECD = {
 						CreatedOnToolsVersion = 11.4;
 					};
 				};
 			};
-			buildConfigurationList = 808DABCB244A41DC00771ECD /* Build configuration list for PBXProject "Coctails Book" */;
+			buildConfigurationList = 808DABEB244A439C00771ECD /* Build configuration list for PBXProject "Coctails Book" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +121,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 808DABC7244A41DC00771ECD;
-			productRefGroup = 808DABD1244A41DC00771ECD /* Products */;
+			mainGroup = 808DABE7244A439C00771ECD;
+			productRefGroup = 808DABF1244A439C00771ECD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				808DABCF244A41DC00771ECD /* Coctails Book */,
+				808DABEF244A439C00771ECD /* Coctails Book */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		808DABCE244A41DC00771ECD /* Resources */ = {
+		808DABEE244A439C00771ECD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				808DABE0244A41DD00771ECD /* LaunchScreen.storyboard in Resources */,
-				808DABDD244A41DD00771ECD /* Assets.xcassets in Resources */,
-				808DABDB244A41DC00771ECD /* Main.storyboard in Resources */,
+				808DAC00244A439D00771ECD /* LaunchScreen.storyboard in Resources */,
+				808DABFD244A439D00771ECD /* Assets.xcassets in Resources */,
+				808DABFB244A439C00771ECD /* Main.storyboard in Resources */,
+				808DAC0B244A49C400771ECD /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		808DABCC244A41DC00771ECD /* Sources */ = {
+		808DABEC244A439C00771ECD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				808DABD8244A41DC00771ECD /* ViewController.swift in Sources */,
-				808DABD4244A41DC00771ECD /* AppDelegate.swift in Sources */,
-				808DABD6244A41DC00771ECD /* SceneDelegate.swift in Sources */,
+				808DAC0A244A49C400771ECD /* MainViewController.swift in Sources */,
+				808DABF8244A439C00771ECD /* ViewController.swift in Sources */,
+				808DABF4244A439C00771ECD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		808DABD9244A41DC00771ECD /* Main.storyboard */ = {
+		808DABF9244A439C00771ECD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				808DABDA244A41DC00771ECD /* Base */,
+				808DABFA244A439C00771ECD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		808DABDE244A41DD00771ECD /* LaunchScreen.storyboard */ = {
+		808DABFE244A439D00771ECD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				808DABDF244A41DD00771ECD /* Base */,
+				808DABFF244A439D00771ECD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +178,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		808DABE2244A41DD00771ECD /* Debug */ = {
+		808DAC02244A439D00771ECD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +238,7 @@
 			};
 			name = Debug;
 		};
-		808DABE3244A41DD00771ECD /* Release */ = {
+		808DAC03244A439D00771ECD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,12 +292,13 @@
 			};
 			name = Release;
 		};
-		808DABE5244A41DD00771ECD /* Debug */ = {
+		808DAC05244A439D00771ECD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Coctails Book/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,12 +310,13 @@
 			};
 			name = Debug;
 		};
-		808DABE6244A41DD00771ECD /* Release */ = {
+		808DAC06244A439D00771ECD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Coctails Book/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,25 +331,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		808DABCB244A41DC00771ECD /* Build configuration list for PBXProject "Coctails Book" */ = {
+		808DABEB244A439C00771ECD /* Build configuration list for PBXProject "Coctails Book" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				808DABE2244A41DD00771ECD /* Debug */,
-				808DABE3244A41DD00771ECD /* Release */,
+				808DAC02244A439D00771ECD /* Debug */,
+				808DAC03244A439D00771ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		808DABE4244A41DD00771ECD /* Build configuration list for PBXNativeTarget "Coctails Book" */ = {
+		808DAC04244A439D00771ECD /* Build configuration list for PBXNativeTarget "Coctails Book" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				808DABE5244A41DD00771ECD /* Debug */,
-				808DABE6244A41DD00771ECD /* Release */,
+				808DAC05244A439D00771ECD /* Debug */,
+				808DAC06244A439D00771ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 808DABC8244A41DC00771ECD /* Project object */;
+	rootObject = 808DABE8244A439C00771ECD /* Project object */;
 }
