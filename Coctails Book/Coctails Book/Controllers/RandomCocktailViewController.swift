@@ -1,18 +1,23 @@
 //
-//  MainViewController.swift
+//  RandomCocktailViewController.swift
 //  Coctails Book
 //
-//  Created by Сергей Павленок on 4/17/20.
-//  Copyright © 2020 just_terror. All rights reserved.
+//  Created by Сергей Павленок on 4/18/20.
+//  Copyright © 2020 justterror. All rights reserved.
 //
 
 import UIKit
 
-class MainViewController: UIViewController {
+class RandomCocktailViewController: ViewController {
 
+    @IBOutlet weak var shakeImage: UIImageView!
+    
+    @IBOutlet weak var shakeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "Random cocktail"
+        shakeImage.image = UIImage(named: "IPhoneShake")
         // Do any additional setup after loading the view.
     }
 
