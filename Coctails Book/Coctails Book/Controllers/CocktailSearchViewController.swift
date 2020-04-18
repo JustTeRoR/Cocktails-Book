@@ -1,5 +1,5 @@
 //
-//  CocktailDetailsViewController.swift
+//  CocktailSearchViewController.swift
 //  Coctails Book
 //
 //  Created by Сергей Павленок on 4/18/20.
@@ -8,10 +8,11 @@
 
 import UIKit
 
-class CocktailDetailsViewController: UIViewController {
+class CocktailSearchViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //title = "Search for cocktails"
         
         // Do any additional setup after loading the view.
     }

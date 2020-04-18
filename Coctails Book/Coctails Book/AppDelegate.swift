@@ -17,12 +17,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-        let rootViewController = MainViewController()
-        let cocktailDetailsCOntroller = CocktailDetailsViewController()
-        let navigationController = UINavigationController(rootViewController: rootViewController)
+        let cocktailSearchViewController = CocktailSearchViewController()
+        let cocktailDetailsViewController = CocktailDetailsViewController()
+        let randomCocktailViewController = RandomCocktailViewController()
+        let randomCocktailDetailsViewController = CocktailDetailsViewController()
+        
+        
+        let commonScenarioNavigationController = UINavigationController(rootViewController: cocktailSearchViewController)
+        commonScenarioNavigationController.pushViewController(cocktailDetailsViewController, animated: true)
+        
+        let randomScenarioNavigationController = UINavigationController(rootViewController: randomCocktailViewController)
+        randomScenarioNavigationController.pushViewController(randomCocktailDetailsViewController, animated: true)
+        
+        
         
         let tabBarController = UITabBarController()
-        tabBarController.setViewControllers([navigationController, cocktailDetailsCOntroller], animated: true)
+        
+        let searchItem = UITabBarItem()
+        searchItem.title = "Search for cocktail"
+        searchItem.image = UIImage(named: "SearchTabBarImage")
+        commonScenarioNavigationController.tabBarItem = searchItem
+        
+        let randomItem = UITabBarItem()
+        randomItem.title = "Random cocktail"
+        randomItem.image = UIImage(named: "RandomTabBarImage")
+        randomScenarioNavigationController.tabBarItem = randomItem
+        
+        tabBarController.setViewControllers([randomScenarioNavigationController, commonScenarioNavigationController], animated: true)
         window?.rootViewController = tabBarController
         
         return true
