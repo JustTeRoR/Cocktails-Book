@@ -10,24 +10,23 @@ import Foundation
 
 class Ingredient
 {
-    private var IngredientName_:String?
-    private var IngredientMeasure_:String?
+    private var ingredientName: String?
+    private var ingredientMeasure: String?
     
-    public func Ingredient(ingredientName: String, ingredientMeasure: String)
-    {
-        IngredientName_ = ingredientName
-        IngredientMeasure_ = ingredientMeasure
+    public init(ingredientName: String?, ingredientMeasure: String?) {
+        self.ingredientName = ingredientName
+        self.ingredientMeasure = ingredientMeasure
     }
     
     public func ToString()->String
     {
-        if (IngredientMeasure_ != nil && IngredientName_ != nil)
+        if (ingredientMeasure != nil && ingredientName != nil)
         {
-            return "\(IngredientMeasure_!) \(IngredientName_!)"
+            return "\(ingredientMeasure!) \(ingredientName!)"
         }
-        else if (IngredientName_ != nil)
+        else if (ingredientName != nil)
         {
-            return "\(IngredientName_!)"
+            return "\(ingredientName!)"
         }
         else
         {
@@ -35,4 +34,11 @@ class Ingredient
         }
     }
     
+    public func getIngredientName() -> String? {
+        return ingredientName;
+    }
+    
+    public func getIngredientMeasure() -> String? {
+        return ingredientMeasure;
+    }
 }
