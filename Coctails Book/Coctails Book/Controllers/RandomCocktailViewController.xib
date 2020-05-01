@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RandomCocktailViewController" customModule="Coctails_Book" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RandomCocktailViewController" customModule="Cocktails_Book" customModuleProvider="target">
             <connections>
                 <outlet property="shakeImage" destination="gLl-hX-Vbs" id="fXb-jI-iuJ"/>
                 <outlet property="shakeLabel" destination="Dmb-mq-6fd" id="MIU-yE-ewi"/>
@@ -34,7 +34,7 @@
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+            <point key="canvasLocation" x="-399" y="27"/>
         </view>
     </objects>
 </document>

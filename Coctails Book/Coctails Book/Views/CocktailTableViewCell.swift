@@ -17,10 +17,11 @@ class CocktailTableViewCell: UITableViewCell {
     
     func commonInit(image: String, coctailName: String, coctailCategory: String, coctailAlcoholic: String)
     {
-        coctailNameLabel.text = coctailName
-        coctailCategoryLabel.text = coctailCategory
-        coctailAlcoholicsLable.text = coctailAlcoholic
-        coctailImage.image = UIImage(named: image)
+        self.coctailNameLabel.text = coctailName
+        self.coctailCategoryLabel.text = coctailCategory
+        self.coctailAlcoholicsLable.text = coctailAlcoholic
+        //self.coctailImage.
+        downloadImage(from: URL(string: image)!)
     }
     
     override func awakeFromNib() {
@@ -29,5 +30,17 @@ class CocktailTableViewCell: UITableViewCell {
         selectionStyle = .none
         
     }
+    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
+    }
     
+    func downloadImage(from url: URL) {
+        getData(from: url) { data, response, error in
+            guard let data = data, error == nil else { return }
+            print(response?.suggestedFilename ?? url.lastPathComponent)
+            DispatchQueue.main.async() {
+                self.coctailImage.image = UIImage(data: data)
+            }
+        }
+    }
 }
