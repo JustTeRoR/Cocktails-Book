@@ -12,20 +12,20 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+  
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        
+      
         let cocktailSearchViewController = CocktailSearchViewController()
-        let cocktailDetailsViewController = CocktailDetailsViewController()
         let randomCocktailViewController = RandomCocktailViewController()
         let randomCocktailDetailsViewController = CocktailDetailsViewController()
-        
+        let cocktailDetailsViewController = CocktailDetailsViewController()
+      
         
         let commonScenarioNavigationController = UINavigationController(rootViewController: cocktailSearchViewController)
         commonScenarioNavigationController.pushViewController(cocktailDetailsViewController, animated: true)
-        
+       
         let randomScenarioNavigationController = UINavigationController(rootViewController: randomCocktailViewController)
         randomScenarioNavigationController.pushViewController(randomCocktailDetailsViewController, animated: true)
         
@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         tabBarController.setViewControllers([randomScenarioNavigationController, commonScenarioNavigationController], animated: true)
         window?.rootViewController = tabBarController
-        
+       
         return true
     }
 }

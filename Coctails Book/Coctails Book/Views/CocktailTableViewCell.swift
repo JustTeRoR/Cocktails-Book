@@ -11,14 +11,8 @@ import UIKit
 class CocktailTableViewCell: UITableViewCell {
 
     @IBOutlet weak var coctailNameLabel: UILabel!
-    
-    
     @IBOutlet weak var coctailCategoryLabel: UILabel!
-    
-    
     @IBOutlet weak var coctailAlcoholicsLable: UILabel!
-    
-    
     @IBOutlet weak var coctailImage: UIImageView!
     
     func commonInit(image: String, coctailName: String, coctailCategory: String, coctailAlcoholic: String)
@@ -31,13 +25,9 @@ class CocktailTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+       
+        selectionStyle = .none
+        
     }
     
 }

@@ -11,6 +11,7 @@
 		80348F7A244ADECF00E16416 /* RandomCocktailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80348F78244ADECF00E16416 /* RandomCocktailViewController.xib */; };
 		80348F7D244AFB6100E16416 /* CocktailSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80348F7B244AFB6100E16416 /* CocktailSearchViewController.swift */; };
 		80348F7E244AFB6100E16416 /* CocktailSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80348F7C244AFB6100E16416 /* CocktailSearchViewController.xib */; };
+		8042996F245771020054ED89 /* CocktailListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042996E245771020054ED89 /* CocktailListResponse.swift */; };
 		808DABF4244A439C00771ECD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DABF3244A439C00771ECD /* AppDelegate.swift */; };
 		808DABF8244A439C00771ECD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DABF7244A439C00771ECD /* ViewController.swift */; };
 		808DABFB244A439C00771ECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808DABF9244A439C00771ECD /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		808DAC15244A66EF00771ECD /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DAC14244A66EF00771ECD /* Ingredient.swift */; };
 		808DAC1A244A727600771ECD /* CocktailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DAC18244A727600771ECD /* CocktailTableViewCell.swift */; };
 		808DAC1B244A727600771ECD /* CocktailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808DAC19244A727600771ECD /* CocktailTableViewCell.xib */; };
+		808EADCB245458C8002443E0 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808EADCA245458C8002443E0 /* ApiConstants.swift */; };
+		808EADCE24545AE5002443E0 /* CocktailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808EADCD24545AE5002443E0 /* CocktailService.swift */; };
+		808EADD024548DCE002443E0 /* ServiceErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808EADCF24548DCE002443E0 /* ServiceErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +33,8 @@
 		80348F78244ADECF00E16416 /* RandomCocktailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomCocktailViewController.xib; sourceTree = "<group>"; };
 		80348F7B244AFB6100E16416 /* CocktailSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailSearchViewController.swift; sourceTree = "<group>"; };
 		80348F7C244AFB6100E16416 /* CocktailSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocktailSearchViewController.xib; sourceTree = "<group>"; };
-		808DABF0244A439C00771ECD /* Coctails Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coctails Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8042996E245771020054ED89 /* CocktailListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailListResponse.swift; sourceTree = "<group>"; };
+		808DABF0244A439C00771ECD /* Cocktails Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cocktails Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		808DABF3244A439C00771ECD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		808DABF7244A439C00771ECD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		808DABFA244A439C00771ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +47,9 @@
 		808DAC14244A66EF00771ECD /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		808DAC18244A727600771ECD /* CocktailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailTableViewCell.swift; sourceTree = "<group>"; };
 		808DAC19244A727600771ECD /* CocktailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocktailTableViewCell.xib; sourceTree = "<group>"; };
+		808EADCA245458C8002443E0 /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		808EADCD24545AE5002443E0 /* CocktailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailService.swift; sourceTree = "<group>"; };
+		808EADCF24548DCE002443E0 /* ServiceErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +74,7 @@
 		808DABF1244A439C00771ECD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				808DABF0244A439C00771ECD /* Coctails Book.app */,
+				808DABF0244A439C00771ECD /* Cocktails Book.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +82,8 @@
 		808DABF2244A439C00771ECD /* Coctails Book */ = {
 			isa = PBXGroup;
 			children = (
+				808EADCC24545AC2002443E0 /* Service */,
+				808EADC9245458A2002443E0 /* Resources */,
 				808DAC11244A5FBF00771ECD /* Models */,
 				808DAC10244A5FB200771ECD /* Views */,
 				808DAC07244A499000771ECD /* Controllers */,
@@ -118,12 +128,30 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		808EADC9245458A2002443E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				808EADCA245458C8002443E0 /* ApiConstants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		808EADCC24545AC2002443E0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				808EADCD24545AE5002443E0 /* CocktailService.swift */,
+				808EADCF24548DCE002443E0 /* ServiceErrors.swift */,
+				8042996E245771020054ED89 /* CocktailListResponse.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		808DABEF244A439C00771ECD /* Coctails Book */ = {
+		808DABEF244A439C00771ECD /* Cocktails Book */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 808DAC04244A439D00771ECD /* Build configuration list for PBXNativeTarget "Coctails Book" */;
+			buildConfigurationList = 808DAC04244A439D00771ECD /* Build configuration list for PBXNativeTarget "Cocktails Book" */;
 			buildPhases = (
 				808DABEC244A439C00771ECD /* Sources */,
 				808DABED244A439C00771ECD /* Frameworks */,
@@ -133,9 +161,9 @@
 			);
 			dependencies = (
 			);
-			name = "Coctails Book";
+			name = "Cocktails Book";
 			productName = "Coctails Book";
-			productReference = 808DABF0244A439C00771ECD /* Coctails Book.app */;
+			productReference = 808DABF0244A439C00771ECD /* Cocktails Book.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +181,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 808DABEB244A439C00771ECD /* Build configuration list for PBXProject "Coctails Book" */;
+			buildConfigurationList = 808DABEB244A439C00771ECD /* Build configuration list for PBXProject "Cocktails Book" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -166,7 +194,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				808DABEF244A439C00771ECD /* Coctails Book */,
+				808DABEF244A439C00771ECD /* Cocktails Book */,
 			);
 		};
 /* End PBXProject section */
@@ -195,11 +223,15 @@
 			files = (
 				808DAC0E244A54FC00771ECD /* CocktailDetailsViewController.swift in Sources */,
 				808DAC1A244A727600771ECD /* CocktailTableViewCell.swift in Sources */,
+				8042996F245771020054ED89 /* CocktailListResponse.swift in Sources */,
 				80348F79244ADECF00E16416 /* RandomCocktailViewController.swift in Sources */,
 				808DAC15244A66EF00771ECD /* Ingredient.swift in Sources */,
 				80348F7D244AFB6100E16416 /* CocktailSearchViewController.swift in Sources */,
+				808EADCB245458C8002443E0 /* ApiConstants.swift in Sources */,
 				808DABF8244A439C00771ECD /* ViewController.swift in Sources */,
 				808DAC13244A616900771ECD /* Cocktail.swift in Sources */,
+				808EADD024548DCE002443E0 /* ServiceErrors.swift in Sources */,
+				808EADCE24545AE5002443E0 /* CocktailService.swift in Sources */,
 				808DABF4244A439C00771ECD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,7 +413,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		808DABEB244A439C00771ECD /* Build configuration list for PBXProject "Coctails Book" */ = {
+		808DABEB244A439C00771ECD /* Build configuration list for PBXProject "Cocktails Book" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				808DAC02244A439D00771ECD /* Debug */,
@@ -390,7 +422,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		808DAC04244A439D00771ECD /* Build configuration list for PBXNativeTarget "Coctails Book" */ = {
+		808DAC04244A439D00771ECD /* Build configuration list for PBXNativeTarget "Cocktails Book" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				808DAC05244A439D00771ECD /* Debug */,

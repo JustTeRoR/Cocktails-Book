@@ -19,7 +19,8 @@ class RandomCocktailViewController: ViewController {
         title = "Random cocktail"
         shakeImage.image = UIImage(named: "IPhoneShake")
         // Do any additional setup after loading the view.
-    }
+        }
+    
 
 
     /*
