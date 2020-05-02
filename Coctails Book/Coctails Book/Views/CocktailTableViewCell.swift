@@ -23,6 +23,7 @@ class CocktailTableViewCell: UITableViewCell {
         //self.coctailImage.
         
         downloadImage(from: URL(string: image)!)
+        
     }
     
     override func awakeFromNib() {

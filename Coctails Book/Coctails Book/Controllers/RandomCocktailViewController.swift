@@ -17,11 +17,12 @@ class RandomCocktailViewController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // randCocktailNavBar.delegate = self
-        
-        
-   //     let randomScenarioNavigationController = UINavigationController(rootViewController: self)
-        
+        let backgroundImageView = UIImageView(image: UIImage(named: "background"))
+        backgroundImageView.frame = self.view.frame
+        backgroundImageView.contentMode = .scaleAspectFill
+        self.view.addSubview(backgroundImageView)
+        self.view.sendSubviewToBack(backgroundImageView)
+       
         shakeImage.image = UIImage(named: "IPhoneShake")
         title = "RANDOM COCKTAIL"
         
@@ -33,21 +34,10 @@ class RandomCocktailViewController: ViewController {
 
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
-            print("shaked")
             let randomCocktailDetails = CocktailDetailsViewController()
+            randomCocktailDetails.shouldPresentRandomCocktail = true
             navigationController?.pushViewController(randomCocktailDetails, animated: true)
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 

@@ -74,43 +74,43 @@ struct Cocktail : Codable
         let secondIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient2)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure2)))
         ingredientList.append(secondIngredient ?? Ingredient(ingredientName: nil,ingredientMeasure: nil))
         
-        let thirdIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient2)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure2)))
+        let thirdIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient3)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure3)))
         ingredientList.append(thirdIngredient ?? Ingredient(ingredientName: nil,ingredientMeasure: nil))
         
-        let fourthIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient2)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure2)))
+        let fourthIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient4)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure4)))
         ingredientList.append(fourthIngredient ?? Ingredient(ingredientName:nil,ingredientMeasure:nil))
         
-        let fifthIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient2)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure2)))
+        let fifthIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient5)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure5)))
         ingredientList.append(fifthIngredient ?? Ingredient(ingredientName: nil,ingredientMeasure: nil))
         
-        let sixthIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient2)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure2)))
+        let sixthIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient6)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure6)))
               ingredientList.append(sixthIngredient ?? Ingredient(ingredientName: nil,ingredientMeasure: nil))
         
-        let seventhIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient2)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure2)))
+        let seventhIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient7)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure7)))
               ingredientList.append(seventhIngredient ?? Ingredient(ingredientName: nil,ingredientMeasure: nil))
         
-        let eigthIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient2)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure2)))
+        let eigthIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient8)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure8)))
               ingredientList.append(eigthIngredient ?? Ingredient(ingredientName: nil,ingredientMeasure: nil))
         
-        let ninethIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient2)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure2)))
+        let ninethIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient9)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure9)))
               ingredientList.append(ninethIngredient ?? Ingredient(ingredientName: nil,ingredientMeasure: nil))
         
-        let tenthIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient2)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure2)))
+        let tenthIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient10)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure10)))
               ingredientList.append(tenthIngredient ?? Ingredient(ingredientName: nil,ingredientMeasure: nil))
         
-        let eleventhIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient2)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure2)))
+        let eleventhIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient11)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure11)))
         ingredientList.append(eleventhIngredient ?? Ingredient(ingredientName: nil,ingredientMeasure: nil))
         
-        let twelvethIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient2)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure2)))
+        let twelvethIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient12)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure12)))
         ingredientList.append(twelvethIngredient ?? Ingredient(ingredientName: nil,ingredientMeasure: nil))
         
-        let thirteenthIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient2)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure2)))
+        let thirteenthIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient13)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure13)))
         ingredientList.append(thirteenthIngredient ?? Ingredient(ingredientName: nil,ingredientMeasure: nil))
         
-        let fourteenthIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient2)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure2)))
+        let fourteenthIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient14)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure14)))
         ingredientList.append(fourteenthIngredient ?? Ingredient(ingredientName: nil,ingredientMeasure: nil))
         
-        let fifteenthIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient2)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure2)))
+        let fifteenthIngredient: Ingredient? = Ingredient(ingredientName: (try? container.decode(String.self, forKey: .strIngredient15)), ingredientMeasure: (try? container.decode(String.self, forKey: .strMeasure15)))
         ingredientList.append(fifteenthIngredient ?? Ingredient(ingredientName: nil,ingredientMeasure: nil))
 
     }
