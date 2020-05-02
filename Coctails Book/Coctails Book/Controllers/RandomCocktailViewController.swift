@@ -17,11 +17,12 @@ class RandomCocktailViewController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // randCocktailNavBar.delegate = self
-        
-        
-   //     let randomScenarioNavigationController = UINavigationController(rootViewController: self)
-        
+        let backgroundImageView = UIImageView(image: UIImage(named: "background"))
+        backgroundImageView.frame = self.view.frame
+        backgroundImageView.contentMode = .scaleAspectFill
+        self.view.addSubview(backgroundImageView)
+        self.view.sendSubviewToBack(backgroundImageView)
+       
         shakeImage.image = UIImage(named: "IPhoneShake")
         title = "RANDOM COCKTAIL"
         

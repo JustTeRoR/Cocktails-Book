@@ -15,7 +15,7 @@ class CocktailSearchViewController: ViewController {
     
     @IBOutlet weak var cocktailsTableView: UITableView!
     
-    var cocktailss = [CocktailListResponse]()
+    var cocktailList = [Cocktail]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +23,12 @@ class CocktailSearchViewController: ViewController {
         cocktailsTableView.dataSource = self
         cocktailsTableView.delegate = self
         cocktailsTableView.register(UINib(nibName: "CocktailTableViewCell", bundle: nil),forCellReuseIdentifier: "cocktailCell")
+        cocktailSearchBar.delegate = self
         title = "Search for cocktails"
- //       loadData()
-        // Do any additional setup after loading the view.
+        
     }
-
-/*    func loadData()
+/*
+    func loadData()
     {
         let service = CocktailService()
         service.randomCocktail(onComplete: { [weak self] (cocktails) in
@@ -57,10 +57,13 @@ class CocktailSearchViewController: ViewController {
 extension CocktailSearchViewController: UITableViewDataSource, UITableViewDelegate  {
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cocktailss.count
+        return cocktailList.count
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 210
@@ -69,8 +72,15 @@ extension CocktailSearchViewController: UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cocktailCell", for: indexPath) as! CocktailTableViewCell
         
-        let model = cocktailss[indexPath.row]
-        cell.commonInit(image: model.drinks[indexPath.row].cocktailImage, coctailName: model.drinks[indexPath.row].cocktailName, coctailCategory: model.drinks[indexPath.row].cocktailCategory, coctailAlcoholic: model.drinks[indexPath.row].cocktailAlcohol)
+        let model = cocktailList[indexPath.row]
+        cell.commonInit(image: model.cocktailImage, coctailName: model.cocktailName, coctailCategory: model.cocktailCategory, coctailAlcoholic: model.cocktailAlcohol)
         return cell
+    }
+}
+
+extension CocktailSearchViewController: UISearchBarDelegate {
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        
     }
 }

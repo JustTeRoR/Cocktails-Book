@@ -18,6 +18,8 @@ class CocktailDetailsViewController: UIViewController {
     @IBOutlet weak var cocktailAlcohol: UILabel!
     public var cocktailModel: Cocktail!
     
+    //TODO:: Create separation of random and non random cocktails.
+    public var shouldPresentRandomCocktail: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
