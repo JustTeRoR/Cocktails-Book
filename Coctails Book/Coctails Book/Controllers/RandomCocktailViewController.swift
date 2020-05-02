@@ -13,15 +13,31 @@ class RandomCocktailViewController: ViewController {
     @IBOutlet weak var shakeImage: UIImageView!
     
     @IBOutlet weak var shakeLabel: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Random cocktail"
+       // randCocktailNavBar.delegate = self
+        
+        
+   //     let randomScenarioNavigationController = UINavigationController(rootViewController: self)
+        
         shakeImage.image = UIImage(named: "IPhoneShake")
-        // Do any additional setup after loading the view.
-        }
+        title = "RANDOM COCKTAIL"
+        
+    }
     
+    override func becomeFirstResponder() -> Bool {
+        return true
+    }
 
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            print("shaked")
+            let randomCocktailDetails = CocktailDetailsViewController()
+            navigationController?.pushViewController(randomCocktailDetails, animated: true)
+        }
+    }
 
     /*
     // MARK: - Navigation
@@ -34,3 +50,4 @@ class RandomCocktailViewController: ViewController {
     */
 
 }
+

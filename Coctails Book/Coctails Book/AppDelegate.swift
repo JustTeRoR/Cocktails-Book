@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         commonScenarioNavigationController.pushViewController(cocktailDetailsViewController, animated: true)
        
         let randomScenarioNavigationController = UINavigationController(rootViewController: randomCocktailViewController)
-        randomScenarioNavigationController.pushViewController(randomCocktailDetailsViewController, animated: true)
+        //randomScenarioNavigationController.pushViewController(randomCocktailDetailsViewController, animated: true)
         
         
         
@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         randomItem.title = "Random cocktail"
         randomItem.image = UIImage(named: "RandomTabBarImage")
         randomScenarioNavigationController.tabBarItem = randomItem
-        
+        //randomScenarioNavigationController,
         tabBarController.setViewControllers([randomScenarioNavigationController, commonScenarioNavigationController], animated: true)
         window?.rootViewController = tabBarController
        

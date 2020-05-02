@@ -122,6 +122,7 @@
 		808DAC11244A5FBF00771ECD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8042996E245771020054ED89 /* CocktailListResponse.swift */,
 				808DAC12244A616900771ECD /* Cocktail.swift */,
 				808DAC14244A66EF00771ECD /* Ingredient.swift */,
 			);
@@ -141,7 +142,6 @@
 			children = (
 				808EADCD24545AE5002443E0 /* CocktailService.swift */,
 				808EADCF24548DCE002443E0 /* ServiceErrors.swift */,
-				8042996E245771020054ED89 /* CocktailListResponse.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";

@@ -24,20 +24,13 @@ class CocktailSearchViewController: ViewController {
         cocktailsTableView.delegate = self
         cocktailsTableView.register(UINib(nibName: "CocktailTableViewCell", bundle: nil),forCellReuseIdentifier: "cocktailCell")
         title = "Search for cocktails"
-        loadData()
+ //       loadData()
         // Do any additional setup after loading the view.
     }
 
-    func loadData()
+/*    func loadData()
     {
         let service = CocktailService()
-    /*    service.randomCocktail(onComplete: { [weak self] (cocktails) in
-            self?.cocktails = cocktails
-            self?.cocktailsTableView.reloadData()
-        }) { (error) in
-            print(error.localizedDescription)
-        }*/
-        
         service.randomCocktail(onComplete: { [weak self] (cocktails) in
             self?.cocktailss.append(cocktails)
             print("cocktails count \(self!.cocktailss.count)" )
@@ -45,7 +38,7 @@ class CocktailSearchViewController: ViewController {
             }) { (error) in
                 print(error.localizedDescription);
         }
-    }
+    }*/
     
 
 
@@ -67,6 +60,12 @@ extension CocktailSearchViewController: UITableViewDataSource, UITableViewDelega
         return cocktailss.count
     }
     
+    
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 210
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cocktailCell", for: indexPath) as! CocktailTableViewCell
         
@@ -74,5 +73,4 @@ extension CocktailSearchViewController: UITableViewDataSource, UITableViewDelega
         cell.commonInit(image: model.drinks[indexPath.row].cocktailImage, coctailName: model.drinks[indexPath.row].cocktailName, coctailCategory: model.drinks[indexPath.row].cocktailCategory, coctailAlcoholic: model.drinks[indexPath.row].cocktailAlcohol)
         return cell
     }
-    
 }

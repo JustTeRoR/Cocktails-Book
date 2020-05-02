@@ -11,7 +11,7 @@ import Foundation
 
 
 class CocktailService {
-    func randomCocktail(onComplete: @escaping (CocktailListResponse)->Void, onError: @escaping (Error) -> Void) {
+    func randomCocktail(onComplete: @escaping (Cocktail)->Void, onError: @escaping (Error) -> Void) {
         let urlString = ApiConstants.baseUrl + ApiConstants.accessKey + "/random.php"
         
         let url = URL(string: urlString)!
@@ -31,7 +31,7 @@ class CocktailService {
             }
             
             DispatchQueue.main.async {
-                onComplete(randomCocktail)
+                onComplete(randomCocktail.drinks[0])
             }
             dump(randomCocktail)
         }
