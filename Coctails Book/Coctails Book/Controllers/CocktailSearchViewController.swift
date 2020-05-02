@@ -24,11 +24,11 @@ class CocktailSearchViewController: ViewController {
         cocktailsTableView.delegate = self
         cocktailsTableView.register(UINib(nibName: "CocktailTableViewCell", bundle: nil),forCellReuseIdentifier: "cocktailCell")
         title = "Search for cocktails"
-        loadData()
+ //       loadData()
         // Do any additional setup after loading the view.
     }
 
-    func loadData()
+/*    func loadData()
     {
         let service = CocktailService()
         service.randomCocktail(onComplete: { [weak self] (cocktails) in
@@ -38,7 +38,7 @@ class CocktailSearchViewController: ViewController {
             }) { (error) in
                 print(error.localizedDescription);
         }
-    }
+    }*/
     
 
 
@@ -59,6 +59,8 @@ extension CocktailSearchViewController: UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cocktailss.count
     }
+    
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 210

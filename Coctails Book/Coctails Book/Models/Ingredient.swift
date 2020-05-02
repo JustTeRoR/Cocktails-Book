@@ -8,8 +8,7 @@
 
 import Foundation
 
-class Ingredient
-{
+class Ingredient {
     private var ingredientName: String?
     private var ingredientMeasure: String?
     
@@ -22,11 +21,11 @@ class Ingredient
     {
         if (ingredientMeasure != nil && ingredientName != nil)
         {
-            return "\(ingredientMeasure!) \(ingredientName!)"
+            return "\(ingredientMeasure!) \(ingredientName!) \n"
         }
         else if (ingredientName != nil)
         {
-            return "\(ingredientName!)"
+            return "\(ingredientName!) \n"
         }
         else
         {
@@ -35,10 +34,10 @@ class Ingredient
     }
     
     public func getIngredientName() -> String? {
-        return ingredientName;
+        return ingredientName
     }
     
     public func getIngredientMeasure() -> String? {
-        return ingredientMeasure;
+        return ingredientMeasure
     }
 }

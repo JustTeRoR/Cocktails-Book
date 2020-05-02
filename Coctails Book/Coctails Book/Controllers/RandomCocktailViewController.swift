@@ -34,7 +34,8 @@ class RandomCocktailViewController: ViewController {
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             print("shaked")
-          
+            let randomCocktailDetails = CocktailDetailsViewController()
+            navigationController?.pushViewController(randomCocktailDetails, animated: true)
         }
     }
 

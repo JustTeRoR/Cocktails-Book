@@ -21,6 +21,7 @@ class CocktailTableViewCell: UITableViewCell {
         self.coctailCategoryLabel.text = coctailCategory
         self.coctailAlcoholicsLable.text = coctailAlcoholic
         //self.coctailImage.
+        
         downloadImage(from: URL(string: image)!)
     }
     
@@ -44,3 +45,4 @@ class CocktailTableViewCell: UITableViewCell {
         }
     }
 }
+
