@@ -43,6 +43,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="KbQ-tQ-0PJ" firstAttribute="top" secondItem="GVm-Bp-aXC" secondAttribute="bottom" constant="20" id="0PA-9l-OaC"/>
                     <constraint firstItem="KbQ-tQ-0PJ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="10" id="1Qf-79-Sei"/>
@@ -59,6 +60,7 @@
                     <constraint firstAttribute="trailing" secondItem="GVm-Bp-aXC" secondAttribute="trailing" constant="20" id="rtA-bB-Wys"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="coctailAlcoholicsLable" destination="Vxt-hN-vcO" id="TPt-Br-jbo"/>

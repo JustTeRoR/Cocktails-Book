@@ -29,7 +29,12 @@ class CocktailDetailsViewController: UIViewController {
         view.addSubview(backgroundImageView)
         view.sendSubviewToBack(backgroundImageView)
     
-        loadRandomCocktail()
+        if (shouldPresentRandomCocktail == true) {
+            loadRandomCocktail()
+        }
+        else {
+            setValuesToViews()
+        }
     }
     
     

@@ -19,18 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       
         let cocktailSearchViewController = CocktailSearchViewController()
         let randomCocktailViewController = RandomCocktailViewController()
-        let randomCocktailDetailsViewController = CocktailDetailsViewController()
-        let cocktailDetailsViewController = CocktailDetailsViewController()
-      
-        
         let commonScenarioNavigationController = UINavigationController(rootViewController: cocktailSearchViewController)
-        commonScenarioNavigationController.pushViewController(cocktailDetailsViewController, animated: true)
-       
         let randomScenarioNavigationController = UINavigationController(rootViewController: randomCocktailViewController)
-        //randomScenarioNavigationController.pushViewController(randomCocktailDetailsViewController, animated: true)
-        
-        
-        
+
         let tabBarController = UITabBarController()
         
         let searchItem = UITabBarItem()
@@ -42,10 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         randomItem.title = "Random cocktail"
         randomItem.image = UIImage(named: "RandomTabBarImage")
         randomScenarioNavigationController.tabBarItem = randomItem
-        //randomScenarioNavigationController,
+        
         tabBarController.setViewControllers([randomScenarioNavigationController, commonScenarioNavigationController], animated: true)
         window?.rootViewController = tabBarController
-       
         return true
     }
 }

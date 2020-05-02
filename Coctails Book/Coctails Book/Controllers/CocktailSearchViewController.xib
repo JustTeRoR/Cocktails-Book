@@ -20,18 +20,26 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zbw-6N-P12">
-                    <rect key="frame" x="0.0" y="120" width="414" height="742"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zbw-6N-P12">
+                    <rect key="frame" x="0.0" y="100" width="414" height="762"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
-                <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Enter cocktail name..." translatesAutoresizingMaskIntoConstraints="NO" id="0XI-Gi-TRH">
-                    <rect key="frame" x="0.0" y="64" width="414" height="56"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                <searchBar contentMode="redraw" placeholder="Enter cocktail name..." translatesAutoresizingMaskIntoConstraints="NO" id="0XI-Gi-TRH">
+                    <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="zbw-6N-P12" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1o1-Gl-AAD"/>
+                <constraint firstItem="zbw-6N-P12" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="37x-Pc-6YJ"/>
+                <constraint firstItem="0XI-Gi-TRH" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="9fV-R8-WSD"/>
+                <constraint firstItem="0XI-Gi-TRH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DQG-AI-eNM"/>
+                <constraint firstItem="zbw-6N-P12" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Nf1-ie-sGe"/>
+                <constraint firstItem="zbw-6N-P12" firstAttribute="top" secondItem="0XI-Gi-TRH" secondAttribute="bottom" id="qPy-Rk-GTJ"/>
+                <constraint firstItem="0XI-Gi-TRH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="v0d-Z3-EaC"/>
+                <constraint firstItem="zbw-6N-P12" firstAttribute="top" secondItem="0XI-Gi-TRH" secondAttribute="bottom" id="vLM-Ic-AM0"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
         </view>
