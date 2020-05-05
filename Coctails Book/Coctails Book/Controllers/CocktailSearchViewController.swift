@@ -25,15 +25,11 @@ class CocktailSearchViewController: ViewController {
         cocktailSearchBar.delegate = self
         title = "Search for cocktails"
         
-        let backgroundImageView = UIImageView(image: UIImage(named: "background"))
-        backgroundImageView.frame = self.view.frame
-        backgroundImageView.contentMode = .scaleAspectFill
-        self.view.addSubview(backgroundImageView)
-        self.view.sendSubviewToBack(backgroundImageView)
-              
+        self.loadBackground()
         cocktailsTableView.backgroundColor = UIColor.clear
     }
 
+    // MARK: - function for loading certain cocktails
     func loadCocktailsByCurrentQuery(query: String)
     {
         let service = CocktailService()
@@ -48,6 +44,7 @@ class CocktailSearchViewController: ViewController {
 
 }
 
+// MARK: - Extension for tableView
 extension CocktailSearchViewController: UITableViewDataSource, UITableViewDelegate  {
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

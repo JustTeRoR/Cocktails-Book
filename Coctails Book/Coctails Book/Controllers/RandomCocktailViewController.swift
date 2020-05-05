@@ -10,24 +10,21 @@ import UIKit
 
 class RandomCocktailViewController: ViewController {
 
+    // MARK: - IBOutlets
     @IBOutlet weak var shakeImage: UIImageView!
-    
     @IBOutlet weak var shakeLabel: UILabel!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let backgroundImageView = UIImageView(image: UIImage(named: "background"))
-        backgroundImageView.frame = self.view.frame
-        backgroundImageView.contentMode = .scaleAspectFill
-        self.view.addSubview(backgroundImageView)
-        self.view.sendSubviewToBack(backgroundImageView)
+        self.loadBackground()
        
         shakeImage.image = UIImage(named: "IPhoneShake")
         title = "RANDOM COCKTAIL"
         
     }
     
+    // MARK: - Functions for handling shaking
     override func becomeFirstResponder() -> Bool {
         return true
     }

@@ -11,6 +11,7 @@ import Foundation
 
 struct Cocktail : Codable
 {
+    // MARK: - class fieldss
     public var cocktailName: String
     public var cocktailCategory:String
     public var cocktailAlcohol: String
@@ -19,6 +20,7 @@ struct Cocktail : Codable
     public var cocktailImage: String
     public var ingredientList: [Ingredient] = [Ingredient]()
     
+    // MARK: - Coding keys
       enum CodingKeys: String, CodingKey {
         case strDrinkThumb
         case strDrink
@@ -58,6 +60,7 @@ struct Cocktail : Codable
         case strMeasure15
       }
  
+    // MARK: - Decoder
     //FIXME: Refactor this part
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -115,6 +118,7 @@ struct Cocktail : Codable
 
     }
     
+    // MARK: - Encoder
     //FIXME: Refactor this part
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
