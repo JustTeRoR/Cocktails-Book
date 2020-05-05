@@ -8,8 +8,6 @@
 
 import Foundation
 
-
-
 class CocktailService {
     func randomCocktail(onComplete: @escaping (Cocktail)->Void, onError: @escaping (Error) -> Void) {
         let urlString = ApiConstants.baseUrl + ApiConstants.accessKey + "/random.php"
@@ -32,8 +30,6 @@ class CocktailService {
             DispatchQueue.main.async {
                 onComplete(randomCocktail.drinks[0])
             }
-            //TODO: remove dumping on release stage
-            dump(randomCocktail)
         }
         task.resume()
     }
@@ -58,8 +54,6 @@ class CocktailService {
             DispatchQueue.main.async {
                 onComplete(appropriateCocktailList.drinks)
             }
-            //TODO: remove dumping on release stage
-            dump(appropriateCocktailList)
         }
         task.resume()
     }

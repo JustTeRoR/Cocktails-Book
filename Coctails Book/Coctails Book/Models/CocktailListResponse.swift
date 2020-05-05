@@ -11,6 +11,7 @@ import Foundation
 struct CocktailListResponse : Decodable {
     let drinks: [Cocktail]
     
+    
     enum CodingKeys: String, CodingKey {
         case drinks
     }

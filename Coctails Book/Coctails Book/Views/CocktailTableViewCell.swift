@@ -10,40 +10,24 @@ import UIKit
 
 class CocktailTableViewCell: UITableViewCell {
 
+    // MARK: - IBOutlets
     @IBOutlet weak var coctailNameLabel: UILabel!
     @IBOutlet weak var coctailCategoryLabel: UILabel!
     @IBOutlet weak var coctailAlcoholicsLable: UILabel!
     @IBOutlet weak var coctailImage: UIImageView!
     
+    // MARK: - initialization of custom cell
     func commonInit(image: String, coctailName: String, coctailCategory: String, coctailAlcoholic: String)
     {
         self.coctailNameLabel.text = coctailName
         self.coctailCategoryLabel.text = coctailCategory
         self.coctailAlcoholicsLable.text = coctailAlcoholic
-        //self.coctailImage.
-        
-        downloadImage(from: URL(string: image)!)
-        
+        self.coctailImage.downloadImage(from: URL(string: image)!)
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-       
         selectionStyle = .none
-        
-    }
-    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
-        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
-    }
-    
-    func downloadImage(from url: URL) {
-        getData(from: url) { data, response, error in
-            guard let data = data, error == nil else { return }
-            print(response?.suggestedFilename ?? url.lastPathComponent)
-            DispatchQueue.main.async() {
-                self.coctailImage.image = UIImage(data: data)
-            }
-        }
     }
 }
 

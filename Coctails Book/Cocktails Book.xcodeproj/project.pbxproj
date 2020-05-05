@@ -12,11 +12,11 @@
 		80348F7D244AFB6100E16416 /* CocktailSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80348F7B244AFB6100E16416 /* CocktailSearchViewController.swift */; };
 		80348F7E244AFB6100E16416 /* CocktailSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80348F7C244AFB6100E16416 /* CocktailSearchViewController.xib */; };
 		8042996F245771020054ED89 /* CocktailListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042996E245771020054ED89 /* CocktailListResponse.swift */; };
+		805D27F42461EB8000EFE122 /* UIImageView+downloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805D27F32461EB8000EFE122 /* UIImageView+downloadImage.swift */; };
+		805D27F62461EE2E00EFE122 /* UIViewController+loadBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805D27F52461EE2E00EFE122 /* UIViewController+loadBackground.swift */; };
+		805D27F82461F0BB00EFE122 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805D27F72461F0BA00EFE122 /* ViewController.swift */; };
 		808DABF4244A439C00771ECD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DABF3244A439C00771ECD /* AppDelegate.swift */; };
-		808DABF8244A439C00771ECD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DABF7244A439C00771ECD /* ViewController.swift */; };
-		808DABFB244A439C00771ECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808DABF9244A439C00771ECD /* Main.storyboard */; };
 		808DABFD244A439D00771ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808DABFC244A439D00771ECD /* Assets.xcassets */; };
-		808DAC00244A439D00771ECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808DABFE244A439D00771ECD /* LaunchScreen.storyboard */; };
 		808DAC0E244A54FC00771ECD /* CocktailDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DAC0C244A54FC00771ECD /* CocktailDetailsViewController.swift */; };
 		808DAC0F244A54FC00771ECD /* CocktailDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808DAC0D244A54FC00771ECD /* CocktailDetailsViewController.xib */; };
 		808DAC13244A616900771ECD /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DAC12244A616900771ECD /* Cocktail.swift */; };
@@ -34,12 +34,12 @@
 		80348F7B244AFB6100E16416 /* CocktailSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailSearchViewController.swift; sourceTree = "<group>"; };
 		80348F7C244AFB6100E16416 /* CocktailSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocktailSearchViewController.xib; sourceTree = "<group>"; };
 		8042996E245771020054ED89 /* CocktailListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailListResponse.swift; sourceTree = "<group>"; };
+		805D27F32461EB8000EFE122 /* UIImageView+downloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+downloadImage.swift"; sourceTree = "<group>"; };
+		805D27F52461EE2E00EFE122 /* UIViewController+loadBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+loadBackground.swift"; sourceTree = "<group>"; };
+		805D27F72461F0BA00EFE122 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		808DABF0244A439C00771ECD /* Cocktails Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cocktails Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		808DABF3244A439C00771ECD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		808DABF7244A439C00771ECD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		808DABFA244A439C00771ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		808DABFC244A439D00771ECD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		808DABFF244A439D00771ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		808DAC01244A439D00771ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		808DAC0C244A54FC00771ECD /* CocktailDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailsViewController.swift; sourceTree = "<group>"; };
 		808DAC0D244A54FC00771ECD /* CocktailDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocktailDetailsViewController.xib; sourceTree = "<group>"; };
@@ -63,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		805D27F22461EB2100EFE122 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				805D27F32461EB8000EFE122 /* UIImageView+downloadImage.swift */,
+				805D27F52461EE2E00EFE122 /* UIViewController+loadBackground.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		808DABE7244A439C00771ECD = {
 			isa = PBXGroup;
 			children = (
@@ -82,16 +91,15 @@
 		808DABF2244A439C00771ECD /* Coctails Book */ = {
 			isa = PBXGroup;
 			children = (
+				805D27F22461EB2100EFE122 /* Extensions */,
 				808EADCC24545AC2002443E0 /* Service */,
 				808EADC9245458A2002443E0 /* Resources */,
 				808DAC11244A5FBF00771ECD /* Models */,
 				808DAC10244A5FB200771ECD /* Views */,
 				808DAC07244A499000771ECD /* Controllers */,
 				808DABF3244A439C00771ECD /* AppDelegate.swift */,
-				808DABF7244A439C00771ECD /* ViewController.swift */,
-				808DABF9244A439C00771ECD /* Main.storyboard */,
+				805D27F72461F0BA00EFE122 /* ViewController.swift */,
 				808DABFC244A439D00771ECD /* Assets.xcassets */,
-				808DABFE244A439D00771ECD /* LaunchScreen.storyboard */,
 				808DAC01244A439D00771ECD /* Info.plist */,
 			);
 			path = "Coctails Book";
@@ -204,13 +212,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				808DAC00244A439D00771ECD /* LaunchScreen.storyboard in Resources */,
 				808DAC0F244A54FC00771ECD /* CocktailDetailsViewController.xib in Resources */,
 				80348F7A244ADECF00E16416 /* RandomCocktailViewController.xib in Resources */,
 				808DABFD244A439D00771ECD /* Assets.xcassets in Resources */,
 				808DAC1B244A727600771ECD /* CocktailTableViewCell.xib in Resources */,
 				80348F7E244AFB6100E16416 /* CocktailSearchViewController.xib in Resources */,
-				808DABFB244A439C00771ECD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,37 +231,20 @@
 				808DAC1A244A727600771ECD /* CocktailTableViewCell.swift in Sources */,
 				8042996F245771020054ED89 /* CocktailListResponse.swift in Sources */,
 				80348F79244ADECF00E16416 /* RandomCocktailViewController.swift in Sources */,
+				805D27F82461F0BB00EFE122 /* ViewController.swift in Sources */,
 				808DAC15244A66EF00771ECD /* Ingredient.swift in Sources */,
 				80348F7D244AFB6100E16416 /* CocktailSearchViewController.swift in Sources */,
 				808EADCB245458C8002443E0 /* ApiConstants.swift in Sources */,
-				808DABF8244A439C00771ECD /* ViewController.swift in Sources */,
 				808DAC13244A616900771ECD /* Cocktail.swift in Sources */,
+				805D27F42461EB8000EFE122 /* UIImageView+downloadImage.swift in Sources */,
 				808EADD024548DCE002443E0 /* ServiceErrors.swift in Sources */,
 				808EADCE24545AE5002443E0 /* CocktailService.swift in Sources */,
+				805D27F62461EE2E00EFE122 /* UIViewController+loadBackground.swift in Sources */,
 				808DABF4244A439C00771ECD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		808DABF9244A439C00771ECD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				808DABFA244A439C00771ECD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		808DABFE244A439D00771ECD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				808DABFF244A439D00771ECD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		808DAC02244A439D00771ECD /* Debug */ = {
